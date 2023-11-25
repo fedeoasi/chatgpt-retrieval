@@ -29,7 +29,7 @@ OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 PERSIST_PATH= os.environ.get('CHATGPT_PERSIST_PATH')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('CHATGPT_DEBUG')
 
 ALLOWED_HOSTS = []
 

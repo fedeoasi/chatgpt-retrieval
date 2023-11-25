@@ -1,0 +1,1 @@
+ssh -i $CHATGPT_AWS_KEY chatgpt@$CHATGPT_EC2_INSTANCE
