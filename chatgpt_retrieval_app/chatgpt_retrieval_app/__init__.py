@@ -27,6 +27,5 @@ def init():
 
 print(sys.argv)
 
-if 'runserver' in sys.argv:
-    chain = init()
+chain = init()
 

@@ -31,8 +31,11 @@ PERSIST_PATH= os.environ.get('CHATGPT_PERSIST_PATH')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('CHATGPT_DEBUG')
 
-ALLOWED_HOSTS = []
-
+if 'CHATGPT_ALLOWED_HOSTS' in os.environ:
+    ALLOWED_HOSTS = os.environ.get('CHATGPT_ALLOWED_HOSTS').split(',')
+else:
+    ALLOWED_HOSTS = []
+print(f"ALLOWED_HOSTS = {ALLOWED_HOSTS}")
 
 # Application definition
 
