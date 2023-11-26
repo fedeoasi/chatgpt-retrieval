@@ -2,7 +2,9 @@ from django.http import JsonResponse
 from django.shortcuts import render 
 
 import os
-from . import chain
+from . import init
+
+chain = init()
 
 chat_history = []
   
